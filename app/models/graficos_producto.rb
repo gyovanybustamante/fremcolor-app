@@ -1,0 +1,2 @@
+class GraficosProducto < ApplicationRecord
+end

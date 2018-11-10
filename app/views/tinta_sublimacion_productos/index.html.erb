@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tinta Sublimacion Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tinta_sublimacion_productos.each do |tinta_sublimacion_producto| %>
+      <tr>
+        <td><%= tinta_sublimacion_producto.video %></td>
+        <td><%= tinta_sublimacion_producto.titulo %></td>
+        <td><%= tinta_sublimacion_producto.linea_producto %></td>
+        <td><%= tinta_sublimacion_producto.marca %></td>
+        <td><%= tinta_sublimacion_producto.descripcion %></td>
+        <td><%= tinta_sublimacion_producto.especificaciones_tecnicas %></td>
+        <td><%= tinta_sublimacion_producto.presentacion %></td>
+        <td><%= tinta_sublimacion_producto.precio %></td>
+        <td><%= link_to 'Show', tinta_sublimacion_producto %></td>
+        <td><%= link_to 'Edit', edit_tinta_sublimacion_producto_path(tinta_sublimacion_producto) %></td>
+        <td><%= link_to 'Destroy', tinta_sublimacion_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tinta Sublimacion Producto', new_tinta_sublimacion_producto_path %>

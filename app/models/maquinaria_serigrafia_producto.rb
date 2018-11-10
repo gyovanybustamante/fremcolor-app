@@ -1,0 +1,2 @@
+class MaquinariaSerigrafiaProducto < ApplicationRecord
+end

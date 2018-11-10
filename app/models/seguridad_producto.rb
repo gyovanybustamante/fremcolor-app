@@ -1,0 +1,2 @@
+class SeguridadProducto < ApplicationRecord
+end

@@ -1,0 +1,57 @@
+<%= form_with(model: quimicos_serigrafia_producto, local: true) do |form| %>
+  <% if quimicos_serigrafia_producto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(quimicos_serigrafia_producto.errors.count, "error") %> prohibited this quimicos_serigrafia_producto from being saved:</h2>
+
+      <ul>
+      <% quimicos_serigrafia_producto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :video %>
+    <%= form.text_field :video %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :linea_producto %>
+    <%= form.text_field :linea_producto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca %>
+    <%= form.text_field :marca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :especificaciones_tecnicas %>
+    <%= form.text_area :especificaciones_tecnicas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :presentacion %>
+    <%= form.text_field :presentacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.number_field :precio %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

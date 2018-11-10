@@ -1,0 +1,2 @@
+class RepuestosSerigrafiaProducto < ApplicationRecord
+end

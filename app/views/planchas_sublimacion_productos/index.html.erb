@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Planchas Sublimacion Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @planchas_sublimacion_productos.each do |planchas_sublimacion_producto| %>
+      <tr>
+        <td><%= planchas_sublimacion_producto.video %></td>
+        <td><%= planchas_sublimacion_producto.titulo %></td>
+        <td><%= planchas_sublimacion_producto.linea_producto %></td>
+        <td><%= planchas_sublimacion_producto.marca %></td>
+        <td><%= planchas_sublimacion_producto.descripcion %></td>
+        <td><%= planchas_sublimacion_producto.especificaciones_tecnicas %></td>
+        <td><%= planchas_sublimacion_producto.presentacion %></td>
+        <td><%= planchas_sublimacion_producto.precio %></td>
+        <td><%= link_to 'Show', planchas_sublimacion_producto %></td>
+        <td><%= link_to 'Edit', edit_planchas_sublimacion_producto_path(planchas_sublimacion_producto) %></td>
+        <td><%= link_to 'Destroy', planchas_sublimacion_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Planchas Sublimacion Producto', new_planchas_sublimacion_producto_path %>

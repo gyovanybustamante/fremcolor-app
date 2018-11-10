@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Impresoras Sublimacion Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @impresoras_sublimacion_productos.each do |impresoras_sublimacion_producto| %>
+      <tr>
+        <td><%= impresoras_sublimacion_producto.video %></td>
+        <td><%= impresoras_sublimacion_producto.titulo %></td>
+        <td><%= impresoras_sublimacion_producto.linea_producto %></td>
+        <td><%= impresoras_sublimacion_producto.marca %></td>
+        <td><%= impresoras_sublimacion_producto.descripcion %></td>
+        <td><%= impresoras_sublimacion_producto.especificaciones_tecnicas %></td>
+        <td><%= impresoras_sublimacion_producto.presentacion %></td>
+        <td><%= impresoras_sublimacion_producto.precio %></td>
+        <td><%= link_to 'Show', impresoras_sublimacion_producto %></td>
+        <td><%= link_to 'Edit', edit_impresoras_sublimacion_producto_path(impresoras_sublimacion_producto) %></td>
+        <td><%= link_to 'Destroy', impresoras_sublimacion_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Impresoras Sublimacion Producto', new_impresoras_sublimacion_producto_path %>

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Seguridad Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @seguridad_productos.each do |seguridad_producto| %>
+      <tr>
+        <td><%= seguridad_producto.video %></td>
+        <td><%= seguridad_producto.titulo %></td>
+        <td><%= seguridad_producto.linea_producto %></td>
+        <td><%= seguridad_producto.marca %></td>
+        <td><%= seguridad_producto.descripcion %></td>
+        <td><%= seguridad_producto.especificaciones_tecnicas %></td>
+        <td><%= seguridad_producto.presentacion %></td>
+        <td><%= seguridad_producto.precio %></td>
+        <td><%= link_to 'Show', seguridad_producto %></td>
+        <td><%= link_to 'Edit', edit_seguridad_producto_path(seguridad_producto) %></td>
+        <td><%= link_to 'Destroy', seguridad_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Seguridad Producto', new_seguridad_producto_path %>

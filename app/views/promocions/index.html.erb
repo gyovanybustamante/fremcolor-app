@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Promocions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cideo promocion</th>
+      <th>Titulo promocion</th>
+      <th>Descripcion promocion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @promocions.each do |promocion| %>
+      <tr>
+        <td><%= promocion.cideo_promocion %></td>
+        <td><%= promocion.titulo_promocion %></td>
+        <td><%= promocion.descripcion_promocion %></td>
+        <td><%= promocion.especificaciones_tecnicas %></td>
+        <td><%= promocion.precio %></td>
+        <td><%= link_to 'Show', promocion %></td>
+        <td><%= link_to 'Edit', edit_promocion_path(promocion) %></td>
+        <td><%= link_to 'Destroy', promocion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Promocion', new_promocion_path %>

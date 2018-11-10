@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  video: MyString
+  titulo: MyString
+  linea_producto: MyString
+  marca: MyString
+  descripcion: MyText
+  especificaciones_tecnicas: MyText
+  presentacion: MyString
+  precio: 1
+
+two:
+  video: MyString
+  titulo: MyString
+  linea_producto: MyString
+  marca: MyString
+  descripcion: MyText
+  especificaciones_tecnicas: MyText
+  presentacion: MyString
+  precio: 1

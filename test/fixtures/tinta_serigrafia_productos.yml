@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  video: MyString
+  titulo: MyString
+  linea_producto: MyString
+  marca: MyString
+  descripcion: MyText
+  especificaciones_tecnicas: MyText
+  presentacion: MyString
+  precio: 1
+  titulo_grupo_color_uno: MyString
+  titulo_grupo_color_dos: MyString
+  titulo_grupo_color_tres: MyString
+  titulo_grupo_color_cuatro: MyString
+  titulo_grupo_color_cinco: MyString
+  titulo_grupo_color_seis: MyString
+  titulo_grupo_color_siete: MyString
+  titulo_grupo_color_ocho: MyString
+  titulo_grupo_color_nueve: MyString
+  titulo_grupo_color_diez: MyString
+  titulo_grupo_color_once: MyString
+  titulo_grupo_color_doce: MyString
+
+two:
+  video: MyString
+  titulo: MyString
+  linea_producto: MyString
+  marca: MyString
+  descripcion: MyText
+  especificaciones_tecnicas: MyText
+  presentacion: MyString
+  precio: 1
+  titulo_grupo_color_uno: MyString
+  titulo_grupo_color_dos: MyString
+  titulo_grupo_color_tres: MyString
+  titulo_grupo_color_cuatro: MyString
+  titulo_grupo_color_cinco: MyString
+  titulo_grupo_color_seis: MyString
+  titulo_grupo_color_siete: MyString
+  titulo_grupo_color_ocho: MyString
+  titulo_grupo_color_nueve: MyString
+  titulo_grupo_color_diez: MyString
+  titulo_grupo_color_once: MyString
+  titulo_grupo_color_doce: MyString

@@ -1,0 +1,2 @@
+module InsumosSublimacionProductosHelper
+end

@@ -1,0 +1,2 @@
+class ImpresorasSublimacionProducto < ApplicationRecord
+end

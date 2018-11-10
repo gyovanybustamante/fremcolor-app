@@ -1,0 +1,2 @@
+class PlanchasSublimacionProducto < ApplicationRecord
+end

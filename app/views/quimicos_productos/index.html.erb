@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Quimicos Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @quimicos_productos.each do |quimicos_producto| %>
+      <tr>
+        <td><%= quimicos_producto.video %></td>
+        <td><%= quimicos_producto.titulo %></td>
+        <td><%= quimicos_producto.linea_producto %></td>
+        <td><%= quimicos_producto.marca %></td>
+        <td><%= quimicos_producto.descripcion %></td>
+        <td><%= quimicos_producto.especificaciones_tecnicas %></td>
+        <td><%= quimicos_producto.presentacion %></td>
+        <td><%= quimicos_producto.precio %></td>
+        <td><%= link_to 'Show', quimicos_producto %></td>
+        <td><%= link_to 'Edit', edit_quimicos_producto_path(quimicos_producto) %></td>
+        <td><%= link_to 'Destroy', quimicos_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Quimicos Producto', new_quimicos_producto_path %>

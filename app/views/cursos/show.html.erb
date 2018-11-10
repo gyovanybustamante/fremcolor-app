@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo curso:</strong>
+  <%= @curso.titulo_curso %>
+</p>
+
+<p>
+  <strong>Objetivo curso:</strong>
+  <%= @curso.objetivo_curso %>
+</p>
+
+<p>
+  <strong>Contenido curso text:</strong>
+  <%= @curso.contenido_curso_text %>
+</p>
+
+<p>
+  <strong>Requisitos:</strong>
+  <%= @curso.requisitos %>
+</p>
+
+<p>
+  <strong>Duracion:</strong>
+  <%= @curso.duracion %>
+</p>
+
+<p>
+  <strong>Fecha inicio:</strong>
+  <%= @curso.fecha_inicio %>
+</p>
+
+<p>
+  <strong>Fecha fin:</strong>
+  <%= @curso.fecha_fin %>
+</p>
+
+<p>
+  <strong>Hora:</strong>
+  <%= @curso.hora %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @curso.precio %>
+</p>
+
+<%= link_to 'Edit', edit_curso_path(@curso) %> |
+<%= link_to 'Back', cursos_path %>

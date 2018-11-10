@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Maquinaria Serigrafia Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @maquinaria_serigrafia_productos.each do |maquinaria_serigrafia_producto| %>
+      <tr>
+        <td><%= maquinaria_serigrafia_producto.video %></td>
+        <td><%= maquinaria_serigrafia_producto.titulo %></td>
+        <td><%= maquinaria_serigrafia_producto.linea_producto %></td>
+        <td><%= maquinaria_serigrafia_producto.marca %></td>
+        <td><%= maquinaria_serigrafia_producto.descripcion %></td>
+        <td><%= maquinaria_serigrafia_producto.especificaciones_tecnicas %></td>
+        <td><%= maquinaria_serigrafia_producto.presentacion %></td>
+        <td><%= maquinaria_serigrafia_producto.precio %></td>
+        <td><%= link_to 'Show', maquinaria_serigrafia_producto %></td>
+        <td><%= link_to 'Edit', edit_maquinaria_serigrafia_producto_path(maquinaria_serigrafia_producto) %></td>
+        <td><%= link_to 'Destroy', maquinaria_serigrafia_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Maquinaria Serigrafia Producto', new_maquinaria_serigrafia_producto_path %>

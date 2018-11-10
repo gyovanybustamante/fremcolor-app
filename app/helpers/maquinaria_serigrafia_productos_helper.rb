@@ -1,0 +1,2 @@
+module MaquinariaSerigrafiaProductosHelper
+end

@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Graficos Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @graficos_productos.each do |graficos_producto| %>
+      <tr>
+        <td><%= graficos_producto.video %></td>
+        <td><%= graficos_producto.titulo %></td>
+        <td><%= graficos_producto.linea_producto %></td>
+        <td><%= graficos_producto.marca %></td>
+        <td><%= graficos_producto.descripcion %></td>
+        <td><%= graficos_producto.especificaciones_tecnicas %></td>
+        <td><%= graficos_producto.presentacion %></td>
+        <td><%= graficos_producto.precio %></td>
+        <td><%= link_to 'Show', graficos_producto %></td>
+        <td><%= link_to 'Edit', edit_graficos_producto_path(graficos_producto) %></td>
+        <td><%= link_to 'Destroy', graficos_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Graficos Producto', new_graficos_producto_path %>

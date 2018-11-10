@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tinta Serigrafia Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th>Titulo grupo color uno</th>
+      <th>Titulo grupo color dos</th>
+      <th>Titulo grupo color tres</th>
+      <th>Titulo grupo color cuatro</th>
+      <th>Titulo grupo color cinco</th>
+      <th>Titulo grupo color seis</th>
+      <th>Titulo grupo color siete</th>
+      <th>Titulo grupo color ocho</th>
+      <th>Titulo grupo color nueve</th>
+      <th>Titulo grupo color diez</th>
+      <th>Titulo grupo color once</th>
+      <th>Titulo grupo color doce</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tinta_serigrafia_productos.each do |tinta_serigrafia_producto| %>
+      <tr>
+        <td><%= tinta_serigrafia_producto.video %></td>
+        <td><%= tinta_serigrafia_producto.titulo %></td>
+        <td><%= tinta_serigrafia_producto.linea_producto %></td>
+        <td><%= tinta_serigrafia_producto.marca %></td>
+        <td><%= tinta_serigrafia_producto.descripcion %></td>
+        <td><%= tinta_serigrafia_producto.especificaciones_tecnicas %></td>
+        <td><%= tinta_serigrafia_producto.presentacion %></td>
+        <td><%= tinta_serigrafia_producto.precio %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_uno %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_dos %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_tres %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_cuatro %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_cinco %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_seis %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_siete %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_ocho %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_nueve %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_diez %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_once %></td>
+        <td><%= tinta_serigrafia_producto.titulo_grupo_color_doce %></td>
+        <td><%= link_to 'Show', tinta_serigrafia_producto %></td>
+        <td><%= link_to 'Edit', edit_tinta_serigrafia_producto_path(tinta_serigrafia_producto) %></td>
+        <td><%= link_to 'Destroy', tinta_serigrafia_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tinta Serigrafia Producto', new_tinta_serigrafia_producto_path %>

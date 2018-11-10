@@ -1,0 +1,2 @@
+class PapelSublimacionProducto < ApplicationRecord
+end

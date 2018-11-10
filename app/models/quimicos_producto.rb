@@ -1,0 +1,2 @@
+class QuimicosProducto < ApplicationRecord
+end

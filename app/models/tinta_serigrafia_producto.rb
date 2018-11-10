@@ -1,0 +1,2 @@
+class TintaSerigrafiaProducto < ApplicationRecord
+end

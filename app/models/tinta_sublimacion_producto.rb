@@ -1,0 +1,2 @@
+class TintaSublimacionProducto < ApplicationRecord
+end

@@ -1,0 +1,1 @@
+json.partial! "maquinaria_serigrafia_productos/maquinaria_serigrafia_producto", maquinaria_serigrafia_producto: @maquinaria_serigrafia_producto

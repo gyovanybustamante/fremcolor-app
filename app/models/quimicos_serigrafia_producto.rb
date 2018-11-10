@@ -1,0 +1,2 @@
+class QuimicosSerigrafiaProducto < ApplicationRecord
+end

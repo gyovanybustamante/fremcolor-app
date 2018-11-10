@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @seguridad_producto.video %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @seguridad_producto.titulo %>
+</p>
+
+<p>
+  <strong>Linea producto:</strong>
+  <%= @seguridad_producto.linea_producto %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @seguridad_producto.marca %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @seguridad_producto.descripcion %>
+</p>
+
+<p>
+  <strong>Especificaciones tecnicas:</strong>
+  <%= @seguridad_producto.especificaciones_tecnicas %>
+</p>
+
+<p>
+  <strong>Presentacion:</strong>
+  <%= @seguridad_producto.presentacion %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @seguridad_producto.precio %>
+</p>
+
+<%= link_to 'Edit', edit_seguridad_producto_path(@seguridad_producto) %> |
+<%= link_to 'Back', seguridad_productos_path %>

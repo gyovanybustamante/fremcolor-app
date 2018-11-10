@@ -1,0 +1,2 @@
+json.extract! tinta_serigrafia_producto, :id, :video, :titulo, :linea_producto, :marca, :descripcion, :especificaciones_tecnicas, :presentacion, :precio, :titulo_grupo_color_uno, :titulo_grupo_color_dos, :titulo_grupo_color_tres, :titulo_grupo_color_cuatro, :titulo_grupo_color_cinco, :titulo_grupo_color_seis, :titulo_grupo_color_siete, :titulo_grupo_color_ocho, :titulo_grupo_color_nueve, :titulo_grupo_color_diez, :titulo_grupo_color_once, :titulo_grupo_color_doce, :created_at, :updated_at
+json.url tinta_serigrafia_producto_url(tinta_serigrafia_producto, format: :json)

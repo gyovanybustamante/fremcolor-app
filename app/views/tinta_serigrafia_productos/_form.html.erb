@@ -1,0 +1,117 @@
+<%= form_with(model: tinta_serigrafia_producto, local: true) do |form| %>
+  <% if tinta_serigrafia_producto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tinta_serigrafia_producto.errors.count, "error") %> prohibited this tinta_serigrafia_producto from being saved:</h2>
+
+      <ul>
+      <% tinta_serigrafia_producto.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :video %>
+    <%= form.text_field :video %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo %>
+    <%= form.text_field :titulo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :linea_producto %>
+    <%= form.text_field :linea_producto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca %>
+    <%= form.text_field :marca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :descripcion %>
+    <%= form.text_area :descripcion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :especificaciones_tecnicas %>
+    <%= form.text_area :especificaciones_tecnicas %>
+  </div>
+
+  <div class="field">
+    <%= form.label :presentacion %>
+    <%= form.text_field :presentacion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.number_field :precio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_uno %>
+    <%= form.text_field :titulo_grupo_color_uno %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_dos %>
+    <%= form.text_field :titulo_grupo_color_dos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_tres %>
+    <%= form.text_field :titulo_grupo_color_tres %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_cuatro %>
+    <%= form.text_field :titulo_grupo_color_cuatro %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_cinco %>
+    <%= form.text_field :titulo_grupo_color_cinco %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_seis %>
+    <%= form.text_field :titulo_grupo_color_seis %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_siete %>
+    <%= form.text_field :titulo_grupo_color_siete %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_ocho %>
+    <%= form.text_field :titulo_grupo_color_ocho %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_nueve %>
+    <%= form.text_field :titulo_grupo_color_nueve %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_diez %>
+    <%= form.text_field :titulo_grupo_color_diez %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_once %>
+    <%= form.text_field :titulo_grupo_color_once %>
+  </div>
+
+  <div class="field">
+    <%= form.label :titulo_grupo_color_doce %>
+    <%= form.text_field :titulo_grupo_color_doce %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

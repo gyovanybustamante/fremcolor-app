@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Video:</strong>
+  <%= @quimicos_producto.video %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @quimicos_producto.titulo %>
+</p>
+
+<p>
+  <strong>Linea producto:</strong>
+  <%= @quimicos_producto.linea_producto %>
+</p>
+
+<p>
+  <strong>Marca:</strong>
+  <%= @quimicos_producto.marca %>
+</p>
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @quimicos_producto.descripcion %>
+</p>
+
+<p>
+  <strong>Especificaciones tecnicas:</strong>
+  <%= @quimicos_producto.especificaciones_tecnicas %>
+</p>
+
+<p>
+  <strong>Presentacion:</strong>
+  <%= @quimicos_producto.presentacion %>
+</p>
+
+<p>
+  <strong>Precio:</strong>
+  <%= @quimicos_producto.precio %>
+</p>
+
+<%= link_to 'Edit', edit_quimicos_producto_path(@quimicos_producto) %> |
+<%= link_to 'Back', quimicos_productos_path %>

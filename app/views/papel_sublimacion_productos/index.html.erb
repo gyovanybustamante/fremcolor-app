@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Papel Sublimacion Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @papel_sublimacion_productos.each do |papel_sublimacion_producto| %>
+      <tr>
+        <td><%= papel_sublimacion_producto.video %></td>
+        <td><%= papel_sublimacion_producto.titulo %></td>
+        <td><%= papel_sublimacion_producto.linea_producto %></td>
+        <td><%= papel_sublimacion_producto.marca %></td>
+        <td><%= papel_sublimacion_producto.descripcion %></td>
+        <td><%= papel_sublimacion_producto.especificaciones_tecnicas %></td>
+        <td><%= papel_sublimacion_producto.presentacion %></td>
+        <td><%= papel_sublimacion_producto.precio %></td>
+        <td><%= link_to 'Show', papel_sublimacion_producto %></td>
+        <td><%= link_to 'Edit', edit_papel_sublimacion_producto_path(papel_sublimacion_producto) %></td>
+        <td><%= link_to 'Destroy', papel_sublimacion_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Papel Sublimacion Producto', new_papel_sublimacion_producto_path %>

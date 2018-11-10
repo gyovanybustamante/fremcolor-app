@@ -1,0 +1,2 @@
+module TintaSublimacionProductosHelper
+end

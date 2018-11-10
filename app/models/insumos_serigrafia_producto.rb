@@ -1,0 +1,2 @@
+class InsumosSerigrafiaProducto < ApplicationRecord
+end

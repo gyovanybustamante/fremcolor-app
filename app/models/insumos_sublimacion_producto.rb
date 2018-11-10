@@ -1,0 +1,2 @@
+class InsumosSublimacionProducto < ApplicationRecord
+end

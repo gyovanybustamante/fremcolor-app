@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Insumos Serigrafia Productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Video</th>
+      <th>Titulo</th>
+      <th>Linea producto</th>
+      <th>Marca</th>
+      <th>Descripcion</th>
+      <th>Especificaciones tecnicas</th>
+      <th>Presentacion</th>
+      <th>Precio</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @insumos_serigrafia_productos.each do |insumos_serigrafia_producto| %>
+      <tr>
+        <td><%= insumos_serigrafia_producto.video %></td>
+        <td><%= insumos_serigrafia_producto.titulo %></td>
+        <td><%= insumos_serigrafia_producto.linea_producto %></td>
+        <td><%= insumos_serigrafia_producto.marca %></td>
+        <td><%= insumos_serigrafia_producto.descripcion %></td>
+        <td><%= insumos_serigrafia_producto.especificaciones_tecnicas %></td>
+        <td><%= insumos_serigrafia_producto.presentacion %></td>
+        <td><%= insumos_serigrafia_producto.precio %></td>
+        <td><%= link_to 'Show', insumos_serigrafia_producto %></td>
+        <td><%= link_to 'Edit', edit_insumos_serigrafia_producto_path(insumos_serigrafia_producto) %></td>
+        <td><%= link_to 'Destroy', insumos_serigrafia_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Insumos Serigrafia Producto', new_insumos_serigrafia_producto_path %>

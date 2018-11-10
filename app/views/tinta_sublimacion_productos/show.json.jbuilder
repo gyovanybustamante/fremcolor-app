@@ -1,0 +1,1 @@
+json.partial! "tinta_sublimacion_productos/tinta_sublimacion_producto", tinta_sublimacion_producto: @tinta_sublimacion_producto

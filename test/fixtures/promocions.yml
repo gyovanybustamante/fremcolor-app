@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cideo_promocion: MyString
+  titulo_promocion: MyString
+  descripcion_promocion: MyText
+  especificaciones_tecnicas: MyText
+  precio: 1
+
+two:
+  cideo_promocion: MyString
+  titulo_promocion: MyString
+  descripcion_promocion: MyText
+  especificaciones_tecnicas: MyText
+  precio: 1

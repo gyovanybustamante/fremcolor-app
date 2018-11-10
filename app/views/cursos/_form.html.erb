@@ -1,0 +1,62 @@
+<%= form_with(model: curso, local: true) do |form| %>
+  <% if curso.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(curso.errors.count, "error") %> prohibited this curso from being saved:</h2>
+
+      <ul>
+      <% curso.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :titulo_curso %>
+    <%= form.text_field :titulo_curso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :objetivo_curso %>
+    <%= form.text_area :objetivo_curso %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contenido_curso_text %>
+    <%= form.text_field :contenido_curso_text %>
+  </div>
+
+  <div class="field">
+    <%= form.label :requisitos %>
+    <%= form.text_area :requisitos %>
+  </div>
+
+  <div class="field">
+    <%= form.label :duracion %>
+    <%= form.text_field :duracion %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_inicio %>
+    <%= form.date_select :fecha_inicio %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fecha_fin %>
+    <%= form.date_select :fecha_fin %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hora %>
+    <%= form.text_field :hora %>
+  </div>
+
+  <div class="field">
+    <%= form.label :precio %>
+    <%= form.number_field :precio %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
