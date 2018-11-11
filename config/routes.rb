@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   resources :servicios
   resources :promocions
   resources :cursos
-  root 'home#index'
+
+  root 'cursos#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
